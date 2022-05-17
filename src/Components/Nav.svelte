@@ -1,20 +1,9 @@
-<script>
-  import { Router, Route, Link } from "svelte-navigator";
-</script>
-
-<Router>
-  <nav class="navbar">
-    <Link to="/">
-      <span class="link">Home</span></Link
-    >
-    <Link class="link" to="login">
-      <span class="link">Login</span>
-    </Link>
-    <Link class="link" to="about">
-      <span class="link">About</span>
-    </Link>
-  </nav>
-</Router>
+<ul class="navbar">
+  <li><a class="link" href="#/">Home</a></li>
+  <li><a class="link" href="#/about">About</a></li>
+  <li><a class="link" href="#/login">Login</a></li>
+  <li><a class="link" href="#/does/not/exist">Not found</a></li>
+</ul>
 
 <style>
   .navbar {
@@ -27,5 +16,8 @@
   }
   .link {
     padding: 2px 8px;
+  }
+  li {
+    list-style-type: none;
   }
 </style>
